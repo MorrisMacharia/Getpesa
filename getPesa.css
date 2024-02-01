@@ -3,6 +3,7 @@
 }
 body {
   background-color: #010138;
+  font-family: "Poppins";
 }
 .first {
   background-color: black;
@@ -19,6 +20,7 @@ body {
   padding-left: 10px;
 }
 .tab {
+  /* display: none; */
   color: #d13f96;
   display: flex;
   gap: 85px;
@@ -35,6 +37,20 @@ body {
   flex-direction: column;
   padding-left: 90px;
   padding-top: 130px;
+  background: linear-gradient(
+    233deg,
+    #d13f96 28.62%,
+    #d13f96 28.62%,
+    #3e14c9 105.6%
+  );
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+@media screen and (max-width: 768px) {
+  .one {
+    padding-left: 45px;
+  }
 }
 .guide {
   font-family: Poppins;
@@ -54,7 +70,6 @@ body {
   -webkit-text-fill-color: transparent;
 }
 .to {
-  font-family: Poppins;
   font-size: 50px;
   font-style: normal;
   font-weight: 900;
@@ -71,7 +86,6 @@ body {
   -webkit-text-fill-color: transparent;
 }
 .gig {
-  font-family: Poppins;
   font-size: 50px;
   font-style: normal;
   font-weight: 900;
@@ -89,7 +103,6 @@ body {
 }
 .paid {
   color: #eedee8;
-  font-family: Poppins;
   font-size: 25px;
   font-style: normal;
   font-weight: 400;
@@ -100,7 +113,6 @@ body {
   width: 242px;
   height: 43px;
   padding: 0px 9px;
-  /* justify-content: center; */
   align-items: center;
   flex-shrink: 0;
   color: #d13f96;
@@ -118,7 +130,6 @@ body {
 }
 .byNumbers {
   text-align: center;
-  font-family: Poppins;
   font-size: 45px;
   font-style: normal;
   font-weight: 900;
@@ -137,12 +148,15 @@ body {
 .who {
   color: #8b52c2;
   text-align: center;
-  font-family: Poppins;
   font-size: 28px;
   font-style: normal;
   font-weight: 100;
   line-height: normal;
   text-transform: uppercase;
+}
+.img19 {
+  display: flex;
+  flex-direction: column;
 }
 .icons {
   display: flex;
@@ -183,11 +197,7 @@ body {
 }
 .whyGet {
   background-image: url(Images/abstract.svg);
-  background: radial-gradient(
-    114.14% 85.19% at 20.4% 24.08%,
-    #6f4c61 0%,
-    #130443 100%
-  );
+  background-color: #520355;
 }
 .whygetpesa {
   display: inline-flex;
@@ -197,41 +207,66 @@ body {
   justify-content: center;
   align-items: center;
   flex-shrink: 0;
-  /* background-color: green; */
+  /* background-color: #f9c438; */
 }
 .upper {
-  /* background-color: red; */
-  display: flex;
   justify-content: space-around;
   flex-direction: column;
   align-items: center;
   align-content: center;
   gap: 15px;
   height: 500px;
+  padding-left: 700px;
   padding-top: 50px;
   padding-bottom: 50px;
+  /* background-color: #d13f96; */
 }
 .exports {
   display: flex;
+  align-items: center;
+  align-content: center;
   justify-content: space-around;
+  color: #eedee8;
+  padding-bottom: 80px;
+}
+@media screen and (max-width: 768px) {
+  .exports {
+    flex-wrap: wrap;
+  }
+}
+.exports1 {
+  display: flex;
+  flex-direction: column;
+}
+.export1 {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.export2 {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.export3 {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 .age {
   color: #fff;
   text-align: center;
-  font-family: Poppins;
   font-size: 30px;
   font-style: normal;
   font-weight: 900;
   line-height: normal;
   width: 480px;
   height: 100px;
-  /* background-color: aquamarine; */
 }
 .school {
   color: #fff;
   text-align: center;
-  font-family: Poppins;
-  font-size: 10px;
+  font-size: 15px;
   font-style: normal;
   font-weight: 500;
   line-height: normal;
@@ -244,7 +279,6 @@ body {
   justify-content: space-around;
   color: #fff;
   text-align: center;
-  font-family: Poppins;
   font-size: 8px;
   font-style: normal;
   font-weight: 500;
@@ -253,10 +287,8 @@ body {
 .acc {
   height: 23px;
   width: 85px;
-  /* background-color: aquamarine; */
 }
 .tools {
-  /* background-color: aqua; */
   height: 23px;
   width: 85px;
 }
@@ -274,57 +306,58 @@ body {
 .box1 {
   display: flex;
   justify-content: center;
+  color: #fff;
+  font-size: 12px;
 }
+
 .box2 {
   display: flex;
   justify-content: center;
-}
-.textBox2 {
-  display: flex;
-  justify-content: center;
-  flex-direction: row;
-  flex-shrink: 0;
   color: #fff;
-  text-align: center;
-  font-family: Poppins;
-  font-size: 10px;
-  font-style: normal;
-  font-weight: 400;
-  line-height: normal;
-  gap: 100px;
-  align-content: center;
+  font-size: 12px;
 }
-.textBox1 {
+.coins {
   display: flex;
-  justify-content: center;
-  flex-direction: row;
-  flex-shrink: 0;
-  color: #fff;
-  text-align: center;
-  font-family: Poppins;
-  font-size: 10px;
-  font-style: normal;
-  font-weight: 400;
-  line-height: normal;
-  gap: 100px;
-  align-content: center;
+  flex-direction: column;
+  align-items: center;
+}
+.weeb {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.ball {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.nft {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.graph {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.graaph {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 .ace {
-  /* background-color: red; */
   color: #fff;
-  font-family: Poppins;
   font-size: 57px;
   font-style: normal;
   font-weight: 250;
   line-height: normal;
   text-transform: uppercase;
-  /* padding-top: 120px; */
   padding-left: 550px;
   height: 30px;
 }
 .giig {
   padding-left: 500px;
-  font-family: Poppins;
   font-size: 70px;
   font-style: normal;
   font-weight: 900;
@@ -352,10 +385,6 @@ body {
   line-height: normal;
   text-transform: uppercase;
   padding-left: 647px;
-  /* padding-bottom: 70px; */
-  /* height: 30px; */
-  /* background-color: aqua; */
-  /* padding-top: 40px; */
 }
 .btt {
   display: flex;
@@ -366,7 +395,6 @@ body {
 .mostImages {
   display: flex;
   justify-content: center;
-  /* background-color: red; */
   gap: 50px;
 }
 .mostGigs {
@@ -380,6 +408,7 @@ body {
     #130443 100%
   );
   padding-top: 130px;
+  padding-bottom: 130px;
 }
 .top3 {
   background-color: aquamarine;
@@ -418,12 +447,15 @@ body {
 }
 .what11 {
   background-image: url(Images/beginn.svg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
   padding-top: 90px;
   padding-bottom: 90px;
   height: 525px;
-  display: flex;
-  flex-direction: column;
-  gap: 40px;
+  /* display: flex;
+  flex-direction: column; */
+  /* gap: 40px; */
 }
 .okay {
   text-align: center;
@@ -461,10 +493,10 @@ body {
   line-height: normal;
 }
 .vector2 {
-  padding-left: 350px;
+  padding-left: 550px;
 }
 .vector3 {
-  padding-left: 950px;
+  padding-left: 1200px;
   padding-bottom: 50px;
 }
 .red {
@@ -493,3 +525,81 @@ body {
   -webkit-text-fill-color: transparent;
   width: 900px;
 }
+
+@media screen and (max-width: 768px) {
+  .box1 {
+    flex-wrap: wrap;
+  }
+  .tab {
+    display: none;
+  }
+  .icons {
+    flex-direction: column;
+    gap: 16px;
+    align-items: center;
+    font-size: 10px;
+  }
+  .age {
+    font-size: 17px;
+    width: 350px;
+  }
+  .school {
+    font-size: 9px;
+    width: 350px;
+  }
+  .upper {
+    padding-left: 20px;
+    justify-content: center;
+    align-items: center;
+  }
+  .topsix {
+    gap: 20px;
+    display: flex;
+    flex-direction: column;
+    padding-bottom: 10px;
+  }
+  .ace {
+    font-size: 28px;
+    padding-left: 100px;
+  }
+  .giig {
+    font-size: 50px;
+    padding-left: 120px;
+  }
+  .guides {
+    font-size: 40px;
+    padding: 210px;
+  }
+  .box2{
+    display: flex;
+    flex-wrap: wrap;
+  }
+  .news{
+    font-size: 16px;
+  }
+  .okay{
+    font-size: 30px;
+  }
+  .what{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 5px;
+    padding-bottom: 30px;
+    height: 250px;
+  }
+  .vector2{
+    height: 7px;
+    width: 7px;
+    padding-left: 5px;
+  }
+  .vector3{
+    padding-left: 300px;
+  }
+  .step{
+    font-size: 20px;
+    width: 300px;
+  }
+
+}
+
