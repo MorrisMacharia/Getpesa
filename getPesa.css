@@ -6,9 +6,12 @@ body {
   font-family: "Poppins";
 }
 .first {
-  background-color: black;
+  background-color: rgb(12, 12, 12);
   display: flex;
   justify-content: space-between;
+  position: fixed;
+  /* z-index: 1; */
+  width: 100%;
 }
 .africa {
   padding-left: 70px;
@@ -168,7 +171,7 @@ body {
   align-content: center;
   gap: 15px;
   height: 500px;
-  padding-left: 450px;
+  padding-left: 690px;
   padding-top: 50px;
   padding-bottom: 50px;
   /* background-color: #d13f96; */
@@ -249,6 +252,7 @@ body {
   display: flex;
   flex-direction: column;
   justify-content: center;
+  align-items: center;
   background: radial-gradient(
     114.14% 85.19% at 20.4% 24.08%,
     #6f4c61 0%,
@@ -256,12 +260,33 @@ body {
   );
 }
 .topSix {
+height: auto;
+width: auto;
+display: flex;
+flex-direction: column;
+/* align-items: center; */
+/* background-color: #f9c438; */
+}
+.acee {
+  font-family: Poppins;
+  font-size: 90px;
+  color: #eedee8;
+  font-weight: 100;
+  position: absolute;
+  /* padding-right: 120px; */
   display: flex;
-  flex-direction: column;
-  height: 200px;
-  /* background-color: #f9c438; */
-  padding-top: 25px;
-  padding-left: 17px;
+  /* background-color: red; */
+  margin-top: -30px;
+  padding-left: 50px;
+}
+.guides{
+  font-size: 70px;
+  font-weight: 100;
+  color: #eedee8;
+  position: absolute;
+  display: flex;
+  margin-top: 75px;
+  margin-left: 300px;
 }
 .box1 {
   display: flex;
@@ -277,56 +302,130 @@ body {
   font-size: 12px;
 }
 .coins {
+  background-image: url(Images/coins.svg);
   display: flex;
   flex-direction: column;
   align-items: center;
+  justify-content: center;
+  height: 200px;
+  width: 200px;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-color: inherit;
+}
+.pearn{
+  position: absolute;
+  margin-top: 140px;
+  background-color: #010138;
+  width: 165px;
+  display: flex;
+  justify-content: center;
 }
 .weeb {
+  background-image: url(Images/web.svg);
   display: flex;
   flex-direction: column;
   align-items: center;
+  height: 200px;
+  width: 200px;
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-color: inherit;
+}
+.web3{
+  position: absolute;
+  margin-top: 170px;
+  background-color: #010138;
+  width: 165px;
+  display: flex;
+  justify-content: center;
 }
 .ball {
+  background-image: url(Images/ball.svg);
   display: flex;
   flex-direction: column;
   align-items: center;
+  height: 200px;
+  width: 200px;
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-color: inherit;
 }
+.casino{
+  position: absolute;
+  margin-top: 170px;
+  background-color: #010138;
+  width: 165px;
+  display: flex;
+  justify-content: center;
+}
+
 .nft {
+  background-image: url(Images/nft.svg);
   display: flex;
   flex-direction: column;
   align-items: center;
+  height: 200px;
+  width: 200px;
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-color: inherit;
+}
+.nff{
+  position: absolute;
+  margin-top: 170px;
+  background-color: #010138;
+  width: 165px;
+  display: flex;
+  justify-content: center;
 }
 .graph {
+  background-image: url(Images/graph.svg);
   display: flex;
   flex-direction: column;
   align-items: center;
+  height: 200px;
+  width: 200px;
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-color: inherit;
+}
+.stock{
+  position: absolute;
+  margin-top: 170px;
+  background-color: #010138;
+  width: 165px;
+  display: flex;
+  justify-content: center;
 }
 .graaph {
+  background-image: url(Images/graaph.svg);
   display: flex;
   flex-direction: column;
   align-items: center;
+  height: 200px;
+  width: 200px;
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-color: inherit;
 }
-.ace {
-  color: #fff;
-  font-size: 70px;
-  font-style: normal;
-  font-weight: 220;
-  line-height: normal;
-  text-transform: uppercase;
-  padding-left: 470px;
-  margin-bottom: 50px;
+.cryp{
   position: absolute;
-  margin-bottom: 60px;
-  /* background-color: #d13f96; */
+  margin-top: 170px;
+  background-color: #010138;
+  width: 165px;
+  display: flex;
+  justify-content: center;
 }
 .giig {
-  padding-left: 430px;
-  font-size: 110px;
-  font-style: normal;
-  font-weight: 900;
-  line-height: normal;
-  text-transform: uppercase;
-  flex-shrink: 0;
+  font-size: 120px;
+  font-weight: 700;
   background: linear-gradient(
     233deg,
     #d13f96 28.62%,
@@ -337,16 +436,7 @@ body {
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
 }
-.guides {
-  font-size: 70px;
-  font-weight: 200;
-  height: 70px;
-  color: #eedee8;
-  /* background-color: #d13f96; */
-  padding-left: 680px;
-  position: absolute;
-  margin-top: 78px;
-}
+
 .btt {
   display: flex;
   justify-content: center;
@@ -522,7 +612,7 @@ body {
     gap: 15px;
   }
   .upper {
-    padding-left: 20px;
+    padding-left: 70px;
     justify-content: center;
     align-items: center;
   }
@@ -552,7 +642,6 @@ body {
     padding-left: 170px;
     font-size: 20px;
     position: absolute;
-    margin-top: 25px;
   }
   .news {
     font-size: 20px;
